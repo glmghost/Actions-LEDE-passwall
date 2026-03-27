@@ -17,4 +17,8 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+#sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main
+src-git passwall_luci https://github.com/Openwrt-Passwall/openwrt-passwall.git;main
+echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
+echo 'src-git passwall_luci https://github.com/Openwrt-Passwall/openwrt-passwall' >>feeds.conf.default
